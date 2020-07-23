@@ -51,19 +51,12 @@ class PrivacyScreen extends StatelessWidget {
                     Container(
                       child: Text(
                           'Thank You for choosing to use XYZ Scanner App. . It is '
-                          'a product of Ultrabot Innovisions Pvt. Ltd, a private limited company'
-                          'registered in India which is a Recruitment Marketplace '
-                          'and HR Tech Company. We are very active and focused in Staffing '
-                          'and Recruitment Business. The vision of Ultrabot Recruitment'
-                          ' is to fill the gap between company and candidate. '
-                          'Ultrabot finds best candidates for Clients.'
-                          ' We try to hire the candidates for most loving and fun'
-                          ' workplace where the candidates get their chances to grow higher.'),
+                          'a product developed by Arnav Satrusal, a sophommore undergrad at IIIT Bhubaneswar'),
                     ),
                     SizedBox(height: 30),
                     Container(
                       child: Text(
-                        'XYZ Scanner App, an App of Ultrabot Innovisions Pvt. Ltd,'
+                        'XYZ Scanner App, an App developed by Arnav Satrusal, a Sophomore undergrad at IIIT Bhubaneswar,'
                         'is committed to ensuring that your privacy is protected.'
                         'XYZ Scanner takes access to your device files and documents '
                         'by your permission and further asks for the '

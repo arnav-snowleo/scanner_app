@@ -92,18 +92,17 @@ class HelpScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       SocialMediaButton.facebook(
-                        url:
-                            "https://www.facebook.com/Ultrabot-Innovations-private-limited-1925245837604565/",
+                        url: "https://www.facebook.com/arnav.satrusal.3",
                         size: 35,
                         color: Colors.white,
                       ),
                       SocialMediaButton.twitter(
-                        url: "https://twitter.com/UltrabotI",
+                        url: "https://twitter.com/ASatrusal",
                         size: 35,
                         color: Colors.white,
                       ),
                       SocialMediaButton.instagram(
-                        url: "https://www.instagram.com/ultronics__/",
+                        url: "https://www.instagram.com/arnavsatrusal__/?hl=en",
                         size: 35,
                         color: Colors.white,
                       ),

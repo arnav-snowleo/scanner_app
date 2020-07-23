@@ -52,13 +52,9 @@ class AboutUsScreen extends StatelessWidget {
                     SizedBox(height: 10),
                     Container(
                       child: Text(
-                        'Ultrabot Innovations is a Recruitment Marketplace '
-                        'and HR Tech Company. We are very active and focused in Staffing '
-                        'and Recruitment Business. The vision of Ultrabot Recruitment'
-                        ' is to fill the gap between company and candidate. '
-                        'Ultrabot finds best candidates for Clients.'
-                        ' We try to hire the candidates for most loving and fun'
-                        ' workplace where the candidates get their chances to grow higher.',
+                        'I am Arnav Satrusal , a Sophomore year Undergrad at IIIT Bhubaneswar '
+                        'a tech enthusiast and I with the vision of AtmaNirbhar Bharat in mind'
+                        'I have developed this App .',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
                           fontSize: 20,
@@ -89,18 +85,18 @@ class AboutUsScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         SocialMediaButton.facebook(
-                          url:
-                              "https://www.facebook.com/Ultrabot-Innovations-private-limited-1925245837604565/",
+                          url: "https://www.facebook.com/arnav.satrusal.3",
                           size: 35,
                           color: Colors.white,
                         ),
                         SocialMediaButton.twitter(
-                          url: "https://twitter.com/UltrabotI",
+                          url: "https://twitter.com/ASatrusal",
                           size: 35,
                           color: Colors.white,
                         ),
                         SocialMediaButton.instagram(
-                          url: "https://www.instagram.com/ultronics__/",
+                          url:
+                              "https://www.instagram.com/arnavsatrusal__/?hl=en",
                           size: 35,
                           color: Colors.white,
                         ),

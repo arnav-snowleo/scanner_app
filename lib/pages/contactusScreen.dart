@@ -61,7 +61,7 @@ class ContactUsScreen extends StatelessWidget {
                       ),
                       Container(
                         child: Text(
-                          'conacts@ultrabotin.com',
+                          'test@gmail.com',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -80,7 +80,7 @@ class ContactUsScreen extends StatelessWidget {
                       ),
                       Container(
                         child: Text(
-                          '+917976079341',
+                          '+91797*******',
                           style: TextStyle(
                             fontSize: 20,
                           ),
@@ -90,7 +90,7 @@ class ContactUsScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 180),
                   Container(
-                    child: Text('Our Social Media Handles!!',
+                    child: Text('My Social Media Handles!!',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -102,18 +102,17 @@ class ContactUsScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       SocialMediaButton.facebook(
-                        url:
-                            "https://www.facebook.com/Ultrabot-Innovations-private-limited-1925245837604565/",
+                        url: "https://www.facebook.com/arnav.satrusal.3",
                         size: 35,
                         color: Colors.white,
                       ),
                       SocialMediaButton.twitter(
-                        url: "https://twitter.com/UltrabotI",
+                        url: "https://twitter.com/ASatrusal",
                         size: 35,
                         color: Colors.white,
                       ),
                       SocialMediaButton.instagram(
-                        url: "https://www.instagram.com/ultronics__/",
+                        url: "https://www.instagram.com/arnavsatrusal__/?hl=en",
                         size: 35,
                         color: Colors.white,
                       ),
