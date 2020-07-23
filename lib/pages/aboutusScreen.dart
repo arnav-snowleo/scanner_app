@@ -53,7 +53,7 @@ class AboutUsScreen extends StatelessWidget {
                     Container(
                       child: Text(
                         'I am Arnav Satrusal , a Sophomore year Undergrad at IIIT Bhubaneswar '
-                        'a tech enthusiast and I with the vision of AtmaNirbhar Bharat in mind'
+                        'a tech enthusiast and with the vision of AtmaNirbhar Bharat in mind'
                         'I have developed this App .',
                         style: TextStyle(
                           fontStyle: FontStyle.italic,
