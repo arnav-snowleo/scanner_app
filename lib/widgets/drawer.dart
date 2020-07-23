@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:scan_me/pages/aboutusScreen.dart';
 import 'package:scan_me/pages/contactusScreen.dart';
 import 'package:scan_me/pages/privacyScreen.dart';
-import 'file:///C:/Users/CHINU/Desktop/new-master/lib/camera/mainScreen.dart';
+//import 'file:///C:/Users/CHINU/Desktop/new-master/lib/camera/mainScreen.dart';
+import 'package:scan_me/camera/mainScreen.dart';
+
 import 'package:scan_me/pages/themeScreen.dart';
 import 'package:scan_me/pages/documentScreen.dart';
 import 'package:scan_me/pages/settingsScreen.dart';

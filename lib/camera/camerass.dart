@@ -11,7 +11,6 @@ import 'package:photofilters/photofilters.dart';
 
 enum _sheetType { gallery, camera }
 
-
 class CameraMain extends StatefulWidget {
   static const String id = "CameraMain";
   @override
@@ -26,7 +25,7 @@ class _CameraMainState extends State<CameraMain> {
         source: type == _sheetType.gallery
             ? ImageSource.gallery
             : ImageSource.camera);
-    if (image == null) return ;
+    if (image == null) return;
     String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
     final Directory extDir = await getApplicationDocumentsDirectory();
 
@@ -38,61 +37,62 @@ class _CameraMainState extends State<CameraMain> {
     });
     Navigator.pushNamed(context, Edit.id);
     Navigator.push(
-        context, MaterialPageRoute(
-        builder: (context) => Edit(file: newImage,path: dirPath,)));
-
+        context,
+        MaterialPageRoute(
+            builder: (context) => Edit(
+                  file: newImage,
+                  path: dirPath,
+                )));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('select image'),
-      ),
-      body:
-      Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 20.0),
-              child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: Text(
-                    "Camera",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
-                    ),
-                  ),
-                  color: Colors.deepOrange,
-                  onPressed:(){ getImage(_sheetType.camera);}  )),
-
-            Padding(
-              padding: EdgeInsets.only(top: 20.0),
-              child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  child: Text(
-                    "Upload Image",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22.0,
-                    ),
-                  ),
-                  color: Colors.deepOrange,
-                  onPressed:(){getImage(_sheetType.gallery);}),
-            ),
-          ],
+        appBar: AppBar(
+          backgroundColor: Colors.indigo,
+          title: Text('Select Image'),
         ),
-      )
-
-    );
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                  padding: EdgeInsets.only(top: 20.0),
+                  child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      child: Text(
+                        "Camera",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22.0,
+                        ),
+                      ),
+                      color: Colors.indigo,
+                      onPressed: () {
+                        getImage(_sheetType.camera);
+                      })),
+              Padding(
+                padding: EdgeInsets.only(top: 20.0),
+                child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    child: Text(
+                      "Upload Image",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22.0,
+                      ),
+                    ),
+                    color: Colors.indigo,
+                    onPressed: () {
+                      getImage(_sheetType.gallery);
+                    }),
+              ),
+            ],
+          ),
+        ));
   }
 }
-
-
-

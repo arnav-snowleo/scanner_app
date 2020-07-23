@@ -13,8 +13,8 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  int _page =0;
-  final List<Widget>_children =[
+  int _page = 0;
+  final List<Widget> _children = [
     MainScreen(),
     CameraMain(),
     Docscreen(),
@@ -24,15 +24,26 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _children[_page],
-      bottomNavigationBar:CurvedNavigationBar(
+      bottomNavigationBar: CurvedNavigationBar(
         items: <Widget>[
-          Icon(Icons.pages, size: 30,color: Colors.white,),
-          Icon(Icons.camera_alt, size: 30,color: Colors.white,),
-          Icon(Icons.description, size: 30,color: Colors.white,),
-
+          Icon(
+            Icons.pages,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.camera_alt,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.description,
+            size: 30,
+            color: Colors.white,
+          ),
         ],
-        color: Colors.blueAccent,
-        buttonBackgroundColor: Colors.blueAccent,
+        color: Colors.indigo,
+        buttonBackgroundColor: Colors.indigo,
         backgroundColor: Colors.white,
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 600),
@@ -46,4 +57,3 @@ class _HomepageState extends State<Homepage> {
     );
   }
 }
-

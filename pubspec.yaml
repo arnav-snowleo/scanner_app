@@ -43,6 +43,8 @@ dependencies:
   images_to_pdf: ^0.0.1
   printing: ^3.5.0
   open_file: ^3.0.1
+  splashscreen: ^1.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

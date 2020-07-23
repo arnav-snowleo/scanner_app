@@ -13,48 +13,57 @@ import 'get_PDF_code.dart';
 
 enum _sheetType { gallery, camera }
 
-
 class Crop extends StatelessWidget {
   File file;
   final String path;
-  Crop({this.file,this.path});
+  Crop({this.file, this.path});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
-        "crop_page": (context) => Crops(file: file,path: path,),
-        "/": (context) => MyHomeRoute(file: file,)
+        "crop_page": (context) => Crops(
+              file: file,
+              path: path,
+            ),
+        "/": (context) => MyHomeRoute(
+              file: file,
+            )
       },
     );
   }
 }
+
 class MyHomeRoute extends StatefulWidget {
   File file;
   MyHomeRoute({this.file});
   @override
   _MyHomeRouteState createState() => new _MyHomeRouteState();
 }
+
 class _MyHomeRouteState extends State<MyHomeRoute> {
   @override
   void initState() {
     super.initState();
     getImage();
   }
+
   Future getImage() async {
-    Navigator.of(context).pushNamed('crop_page', arguments: {'image': widget.file});
+    Navigator.of(context)
+        .pushNamed('crop_page', arguments: {'image': widget.file});
   }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-    );
+    return Scaffold();
   }
 }
+
 class Crops extends StatefulWidget {
   File file;
   final String path;
-  Crops({this.file,this.path});
+  Crops({this.file, this.path});
   @override
   _CropsState createState() => _CropsState();
 }
@@ -86,22 +95,29 @@ class _CropsState extends State<Crops> {
                     borderRadius: BorderRadius.circular(20.0),
                   ),
                   child: Text('NEXT'),
-                  color: Colors.indigoAccent,
+                  color: Colors.indigo,
                   textColor: Colors.white,
-                  onPressed: () async{
-                    String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
-                    final Directory extDir = await getApplicationDocumentsDirectory();
+                  onPressed: () async {
+                    String timestamp() =>
+                        DateTime.now().millisecondsSinceEpoch.toString();
+                    final Directory extDir =
+                        await getApplicationDocumentsDirectory();
                     final String dirPath = '${extDir.path}/Images/flutter_test';
                     await Directory(dirPath).create(recursive: true);
-                    final File newImage = await file.copy('$dirPath/${timestamp()}.jpg');
+                    final File newImage =
+                        await file.copy('$dirPath/${timestamp()}.jpg');
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                Edit(file: file,path: dirPath,)));
+                            builder: (context) => Edit(
+                                  file: file,
+                                  path: dirPath,
+                                )));
                     File tempLocalFile = widget.file;
                     if (tempLocalFile.existsSync()) {
-                      await tempLocalFile.delete(recursive: true,);
+                      await tempLocalFile.delete(
+                        recursive: true,
+                      );
                     }
                   },
                 ),
@@ -123,7 +139,7 @@ class _CropsState extends State<Crops> {
           backgroundColor: Colors.white,
           leading: new IconButton(
             icon:
-            new Icon(Icons.navigate_before, color: Colors.black, size: 40),
+                new Icon(Icons.navigate_before, color: Colors.black, size: 40),
             onPressed: () => Navigator.of(context).pop(),
           ),
         ),
@@ -137,16 +153,20 @@ class _CropsState extends State<Crops> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.indigo,
           onPressed: () async {
             final crop = cropKey.currentState;
             final croppedFile =
-            await crop.cropCompleted(args['image'], pictureQuality: 600);
+                await crop.cropCompleted(args['image'], pictureQuality: 600);
             showImage(context, croppedFile);
           },
           tooltip: 'Increment',
-          child: Text('Crop'),
+          child: Text(
+            'Crop',
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
         ));
   }
 }
-
-

@@ -2,7 +2,7 @@ import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:scan_me/camera/filterScreen.dart';
 import 'package:scan_me/pages/introScreen.dart';
-
+import 'package:scan_me/pages/splashScreen.dart';
 import 'camera/camerass.dart';
 import 'camera/Edit.dart';
 import 'camera/get_PDF_code.dart';
@@ -19,20 +19,21 @@ class MyApp extends StatelessWidget {
     return DynamicTheme(
         defaultBrightness: Brightness.light,
         data: (brightness) => ThemeData(
-          primarySwatch: Colors.indigo,
-          brightness: brightness,
-        ),
+              primarySwatch: Colors.indigo,
+              brightness: brightness,
+            ),
         themedWidgetBuilder: (context, theme) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Scanner app',
+            title: 'DotScanner',
             theme: theme,
-            initialRoute:  Homepage.id,
+            initialRoute: Splash.id,
             routes: {
-              Homepage.id:(context)=>  Homepage(),
-              CameraMain.id: (context) =>CameraMain(),
-              FilterScreen.id: (context)=>FilterScreen(),
-              Edit.id: (context)=>Edit(),
+              Splash.id: (context) => Splash(),
+              Homepage.id: (context) => Homepage(),
+              CameraMain.id: (context) => CameraMain(),
+              FilterScreen.id: (context) => FilterScreen(),
+              Edit.id: (context) => Edit(),
             },
           );
         });

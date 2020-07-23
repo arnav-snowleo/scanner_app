@@ -35,34 +35,36 @@ class _DocscreenState extends State<Docscreen> {
 
   void _listofFiles() async {
     var directory = (await getApplicationDocumentsDirectory()).path;
-    final  Directory extDir = await getApplicationDocumentsDirectory();
+    final Directory extDir = await getApplicationDocumentsDirectory();
     setState(() {
       file = io.Directory('${extDir.path}/pdf/flutter_test').listSync();
     });
   }
+
   String _openResult = 'application/pdf';
   Future<void> openFile() async {
     var directory = (await getApplicationDocumentsDirectory()).path;
-    final  Directory extDir = await getApplicationDocumentsDirectory();
+    final Directory extDir = await getApplicationDocumentsDirectory();
     final filePath = '${extDir.path}/pdf/flutter_test';
     final result = await OpenFile.open(filePath);
 
     setState(() {
       _openResult = "type=${result.type}  message=${result.message}";
     });
-
   }
+
   // Build Part
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.indigo,
         leading: IconButton(
             onPressed: () {
               Navigator.pushNamed(context, Homepage.id);
             },
             icon: Icon(Icons.arrow_back_ios)),
-        title: Text("Get List of Files with whole Path"),
+        title: Text("PDF Files with whole Path"),
       ),
       body: Column(
         children: <Widget>[
@@ -80,11 +82,9 @@ class _DocscreenState extends State<Docscreen> {
                       ),
                     ],
                   );
-
-
                 }),
           ),
-          ],
+        ],
       ),
     );
   }

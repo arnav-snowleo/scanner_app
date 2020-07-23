@@ -13,35 +13,34 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: MainDrawer(),
       appBar: AppBar(
-        title: Text('XYZ Scanner'),
-
+        backgroundColor: Colors.indigo,
+        title: Text('DotScanner'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            /*RaisedButton(
-              onPressed: changeBrightness,
-              child: const Text("Change brightness"),
-            ),*/
-            /*RaisedButton(
-              onPressed: changeColor,
-              child: const Text("Change color"),
-            ),*/
-          ],
+        child: Card(
+          semanticContainer: true,
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          child: Image.asset(
+            'assets/images/undraw_content_structure_79gj.png',
+            fit: BoxFit.fill,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          elevation: 5,
+          margin: EdgeInsets.all(10),
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.indigo,
         onPressed: changeBrightness,
         child: const Icon(Icons.remove_red_eye),
       ),
-
     );
   }
 
@@ -62,12 +61,5 @@ class _MainScreenState extends State<MainScreen> {
         Theme.of(context).brightness == Brightness.dark
             ? Brightness.light
             : Brightness.dark);
-  }
-
-  void changeColor() {
-    DynamicTheme.of(context).setThemeData(ThemeData(
-        primaryColor: Theme.of(context).primaryColor == Colors.indigo
-            ? Colors.red
-            : Colors.indigo));
   }
 }

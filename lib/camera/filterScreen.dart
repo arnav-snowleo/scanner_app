@@ -16,7 +16,7 @@ class FilterScreen extends StatefulWidget {
   static const String id = "FilterScreen";
   final File file;
   final String path;
-  FilterScreen({this.file,this.path});
+  FilterScreen({this.file, this.path});
 
   @override
   _FilterScreenState createState() => new _FilterScreenState();
@@ -57,7 +57,7 @@ class _FilterScreenState extends State<FilterScreen> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Photo Filter Example'),
+        title: new Text('Photo Filter'),
       ),
       body: Center(
           child: new Container(
@@ -76,24 +76,38 @@ class _FilterScreenState extends State<FilterScreen> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0),
                             ),
-                            onPressed: () async{
-                              String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
-                              final Directory extDir = await getApplicationDocumentsDirectory();
-                              final String dirPath = '${extDir.path}/Images/flutter_test';
+                            onPressed: () async {
+                              String timestamp() => DateTime.now()
+                                  .millisecondsSinceEpoch
+                                  .toString();
+                              final Directory extDir =
+                                  await getApplicationDocumentsDirectory();
+                              final String dirPath =
+                                  '${extDir.path}/Images/flutter_test';
                               await Directory(dirPath).create(recursive: true);
-                              final File newImage = await imageFile.copy('$dirPath/${timestamp()}.jpg');
+                              final File newImage = await imageFile
+                                  .copy('$dirPath/${timestamp()}.jpg');
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) =>
-                                          Edit(file: newImage,path: dirPath,)));
+                                      builder: (context) => Edit(
+                                            file: newImage,
+                                            path: dirPath,
+                                          )));
                               File tempLocalFile = widget.file;
                               if (tempLocalFile.existsSync()) {
-                                await tempLocalFile.delete(recursive: true,);
+                                await tempLocalFile.delete(
+                                  recursive: true,
+                                );
                               }
                             },
-                            child: Text("NEXT"),
-                            color: Colors.white,
+                            child: Text(
+                              "NEXT",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                            color: Colors.indigo,
                           )
                         ],
                       ),

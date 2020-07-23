@@ -56,7 +56,7 @@ class _PdfsState extends State<Pdfs> {
     try {
       this.setState(() => _generating = true);
       String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
-      final  Directory extDir = await getApplicationDocumentsDirectory();
+      final Directory extDir = await getApplicationDocumentsDirectory();
       final String dirPath = '${extDir.path}/pdf/flutter_test';
       await Directory(dirPath).create(recursive: true);
       final output = File(path.join('$dirPath/${timestamp()}.pdf'));
@@ -67,7 +67,7 @@ class _PdfsState extends State<Pdfs> {
             .map(
               (file) => PdfPage(
                 imageFile: file,
-                size: Size(	1240 , 1754),
+                size: Size(1240, 1754),
                 compressionQuality: 0.5,
               ),
             )
@@ -103,8 +103,7 @@ class _PdfsState extends State<Pdfs> {
   void _listofFiles() async {
     var directory = (await getApplicationDocumentsDirectory()).path;
     setState(() {
-      file = io.Directory(widget.path)
-          .listSync();
+      file = io.Directory(widget.path).listSync();
     });
   }
 
@@ -119,7 +118,7 @@ class _PdfsState extends State<Pdfs> {
               Navigator.pushNamed(context, Homepage.id);
             },
             icon: Icon(Icons.arrow_back_ios)),
-        title: Text("Get List of Files with whole Path"),
+        title: Text("PDF Files with whole Path"),
       ),
       body: Column(
         children: <Widget>[
@@ -137,45 +136,45 @@ class _PdfsState extends State<Pdfs> {
           if (!isLoading) ...[
             if (_pdfFile == null)
               Padding(
-                padding: const EdgeInsets.all(25.0),
-                child: GestureDetector(
-                  onTap:_createPdf ,
-                  child: Container(
-                    decoration:    ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(18.0),
-                      ),color: Colors.black
-                  ),
-
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(40,10,40,10),
-                      child: Text("Generate PDF",style: TextStyle(color: Colors.white),),
+                  padding: const EdgeInsets.all(25.0),
+                  child: GestureDetector(
+                    onTap: _createPdf,
+                    child: Container(
+                      decoration: ShapeDecoration(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(18.0),
+                          ),
+                          color: Colors.indigo),
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                        child: Text(
+                          "Generate PDF",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
                     ),
-                  ),
-                )
-              ),
+                  )),
             if (_pdfFile != null)
               Padding(
                 padding: const EdgeInsets.all(25.0),
-
                 child: GestureDetector(
-                  onTap: _openPdf ,
+                  onTap: _openPdf,
                   child: Container(
-                    decoration:    ShapeDecoration(
+                    decoration: ShapeDecoration(
                         shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(18.0),
-                        ),color: Colors.black
-                    ),
-
+                        ),
+                        color: Colors.indigo),
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(40,10,40,10),
-                      child: Text("Open PDF",style: TextStyle(color: Colors.white),),
+                      padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+                      child: Text(
+                        "Share PDF",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ),
                 ),
               )
-
-
           ],
         ],
       ),

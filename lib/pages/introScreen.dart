@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'file:///C:/Users/CHINU/Desktop/new-master/lib/camera/mainScreen.dart';
+//import 'file:///C:/Users/CHINU/Desktop/new-master/lib/camera/mainScreen.dart';
+import 'package:scan_me/camera/homepage.dart';
+import 'package:scan_me/camera/mainScreen.dart';
+
+//package : smooth_page_indicator: ^0.1.5
 
 class IntroScreen extends StatefulWidget {
   @override
@@ -22,7 +26,20 @@ class _IntroScreenState extends State<IntroScreen> {
             controller: controller,
             children: <Widget>[
               Container(
-                color: Colors.blueGrey,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [const Color(0xFF21A8D0), const Color(0xFF90ADBD)],
+                    /*FF9CDE*/
+                    begin: FractionalOffset.topRight,
+                    end: FractionalOffset.bottomLeft,
+                    stops: [
+                      0.0,
+                      1.0
+                    ], // the array of  values inside stops basically say how the colors merge with each other
+                    tileMode: TileMode
+                        .clamp, //How this gradient should tile the plane beyond in the region before begin and after end.
+                  ),
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -79,22 +96,41 @@ class _IntroScreenState extends State<IntroScreen> {
                 ),
               ),
               Container(
-                color: Colors.blueGrey[600],
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [const Color(0xFF7528E0), const Color(0xFF90ADBD)],
+                    /*FF9CDE*/
+                    begin: FractionalOffset.topRight,
+                    end: FractionalOffset.bottomLeft,
+                    stops: [
+                      0.0,
+                      1.0
+                    ], // the array of  values inside stops basically say how the colors merge with each other
+                    tileMode: TileMode
+                        .clamp, //How this gradient should tile the plane beyond in the region before begin and after end.
+                  ),
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
-                      height: 124,
+                      height: 34,
                     ),
-                    Container(
-                      child: Icon(
-                        Icons.library_books,
-                        size: 135,
-                        color: Colors.white,
+                    Card(
+                      semanticContainer: true,
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                      child: Image.asset(
+                        'assets/images/undraw_my_documents_ym8x (1).png',
+                        fit: BoxFit.fill,
                       ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      elevation: 5,
+                      margin: EdgeInsets.all(10),
                     ),
                     SizedBox(
-                      height: 72,
+                      height: 48,
                     ),
                     Container(
                       child: Text(
@@ -107,7 +143,7 @@ class _IntroScreenState extends State<IntroScreen> {
                       ),
                     ),
                     SizedBox(
-                      height: 16,
+                      height: 24,
                     ),
                     Container(
                       child: Text(
@@ -120,7 +156,7 @@ class _IntroScreenState extends State<IntroScreen> {
                       ),
                     ),
                     SizedBox(
-                      height: 150,
+                      height: 70,
                     ),
                     Container(
                       child: SmoothPageIndicator(
@@ -133,22 +169,41 @@ class _IntroScreenState extends State<IntroScreen> {
                 ),
               ),
               Container(
-                color: Colors.blueGrey[700],
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [const Color(0xFFD7F507), const Color(0xFF90ADBD)],
+                    /*FF9CDE*/
+                    begin: FractionalOffset.topRight,
+                    end: FractionalOffset.bottomLeft,
+                    stops: [
+                      0.0,
+                      1.0
+                    ], // the array of  values inside stops basically say how the colors merge with each other
+                    tileMode: TileMode
+                        .clamp, //How this gradient should tile the plane beyond in the region before begin and after end.
+                  ),
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     SizedBox(
-                      height: 114,
+                      height: 54,
                     ),
-                    Container(
-                      child: Icon(
-                        Icons.send,
-                        size: 135,
-                        color: Colors.white,
+                    Card(
+                      semanticContainer: true,
+                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                      child: Image.asset(
+                        'assets/images/undraw_share_766i (1).png',
+                        fit: BoxFit.fill,
                       ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      elevation: 5,
+                      margin: EdgeInsets.all(10),
                     ),
                     SizedBox(
-                      height: 52,
+                      height: 32,
                     ),
                     Container(
                       child: Text(
@@ -174,24 +229,27 @@ class _IntroScreenState extends State<IntroScreen> {
                       ),
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 40,
                     ),
                     Container(
                       child: RaisedButton(
-                          child: Text('NEXT'),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: BorderSide(color: Colors.white)),
+                          child: Text('GET STARTED'),
                           textColor: Colors.white,
                           elevation: 4,
                           color: Colors.black38,
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (context) => MainScreen(),
+                                builder: (context) => Homepage(),
                               ),
                             );
                           }),
                     ),
                     SizedBox(
-                      height: 60,
+                      height: 50,
                     ),
                     Container(
                       child: SmoothPageIndicator(
