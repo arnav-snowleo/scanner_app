@@ -90,28 +90,32 @@ It also has a QR Scanner and Barcode Scanner feature and the Barcode Scan allows
 > Some videos which are not in the zip file will be made available on 25th July by 8:00 pm
 
 
+
+
+
+
+
 Barcode Scanner Preview:
 Video in the Zip File:
 
-[QR and Barcode.zip](https://github.com/arnav-snowleo/scanner_app/files/4940231/QR.and.Barcode.zip)
+[QR and Barcode.zip](https://github.com/arnav-snowleo/scanner_app/files/4974294/QR.and.Barcode.zip)
 
 
 Text Detection using OCR :
 Video in the Zip File:
 
-[ocr video.zip](https://github.com/arnav-snowleo/scanner_app/files/4946307/ocr.video.zip)
+[ocr video.zip](https://github.com/arnav-snowleo/scanner_app/files/4974292/ocr.video.zip)
 
 Video depecting the Milestones we have achieved till date:
 
 >Part 1 : Scanner App UI Walkthrough:
 
-[scanner_app_ui_walkthrough.zip](https://github.com/arnav-snowleo/scanner_app/files/4974230/scanner_app_ui_walkthrough.zip)
-
+[scanner_app_ui_walkthrough.zip](https://github.com/arnav-snowleo/scanner_app/files/4974298/scanner_app_ui_walkthrough.zip)
 
 
 >Part 2 : Scanning Images from gallery :
 
-[scanner_app_from_gallery.zip](https://github.com/arnav-snowleo/scanner_app/files/4974236/scanner_app_from_gallery.zip)
+[scanner_app_from_gallery.zip](https://github.com/arnav-snowleo/scanner_app/files/4974299/scanner_app_from_gallery.zip)
 
 >Part 3 : Scanning Images from camera :
 
