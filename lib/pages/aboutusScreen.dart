@@ -102,7 +102,7 @@ class AboutUsScreen extends StatelessWidget {
                         ),
                         SocialMediaButton.linkedin(
                           url:
-                              "https://www.linkedin.com/company/ultrabot-innovations/",
+                              "https://www.linkedin.com/in/arnavsatrusal/",
                           size: 35,
                           color: Colors.white,
                         ),
