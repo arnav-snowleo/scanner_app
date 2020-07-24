@@ -114,5 +114,9 @@ Video depecting the Milestones we have achieved till date:
 
 [scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
 
+> TODO:
+
+Integrate QR Scanner, Barcode Scanner , OCR Feature with the main App.
+
 >The Software is not Open Sourced.
 
