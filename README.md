@@ -100,5 +100,13 @@ Video in the Zip File:
 
 Video depecting the Milestones we have achieved till date:
 
+>Part 1
+
+>Part 2
+
+>Part 3
+
+[scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
+
 >The Software is not Open Sourced.
 
