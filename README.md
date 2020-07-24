@@ -102,6 +102,8 @@ Video depecting the Milestones we have achieved till date:
 
 >Part 1 : Scanner App UI Walkthrough:
 
+[scanner_app_ui_walkthrough.zip](https://github.com/arnav-snowleo/scanner_app/files/4974230/scanner_app_ui_walkthrough.zip)
+
 
 
 >Part 2 : Scanning Images from gallery :
