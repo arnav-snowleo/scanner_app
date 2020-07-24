@@ -100,11 +100,13 @@ Video in the Zip File:
 
 Video depecting the Milestones we have achieved till date:
 
->Part 1
+>Part 1 : Scanner App UI Walkthrough:
 
->Part 2
 
->Part 3
+
+>Part 2 : Scanning Images from gallery :
+
+>Part 3 : Scanning Images from camera : :
 
 [scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
 
