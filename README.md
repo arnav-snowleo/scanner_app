@@ -87,7 +87,7 @@ A Scanner App which converts camera or device images into pdf and allows sharing
 It also has a QR Scanner and Barcode Scanner feature and the Barcode Scan allows users to check if the product is an Indian Product or not.
 
 
-> Some videos which are not in the zip file will be made available on 25th July by 8:00 pm
+> video which is not in the zip file of _scanner app from gallery_ will be made available on 25th July by 4:00 pm
 
 
 
