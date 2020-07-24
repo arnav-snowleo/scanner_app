@@ -63,7 +63,8 @@ None
 
 >Bugs:
 
-Minor bug which is causing the code to break at one point and the generated pdf file is not being displayed in the generated files section which has to be fixed.
+Minor bug causing code breaking has been Fixed.
+So, no bugs as of now!!
 
 
 >Yet to be Added:
@@ -85,6 +86,8 @@ A Scanner App which converts camera or device images into pdf and allows sharing
 
 It also has a QR Scanner and Barcode Scanner feature and the Barcode Scan allows users to check if the product is an Indian Product or not.
 
+
+> Some videos which are not in the zip file will be made available on 25th July by 8:00 pm
 
 
 Barcode Scanner Preview:
@@ -110,7 +113,7 @@ Video depecting the Milestones we have achieved till date:
 
 [scanner_app_from_gallery.zip](https://github.com/arnav-snowleo/scanner_app/files/4974236/scanner_app_from_gallery.zip)
 
->Part 3 : Scanning Images from camera : :
+>Part 3 : Scanning Images from camera :
 
 [scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
 
