@@ -108,6 +108,8 @@ Video depecting the Milestones we have achieved till date:
 
 >Part 2 : Scanning Images from gallery :
 
+[scanner_app_from_gallery.zip](https://github.com/arnav-snowleo/scanner_app/files/4974236/scanner_app_from_gallery.zip)
+
 >Part 3 : Scanning Images from camera : :
 
 [scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
