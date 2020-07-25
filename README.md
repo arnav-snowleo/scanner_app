@@ -1,5 +1,5 @@
 
-# ScannerApp
+# scanner_app
 A Scanner App with on the fly image editing and image scanning, pdf generating and sharing features.
 
 >Installation:
