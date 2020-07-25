@@ -69,7 +69,7 @@ So, no bugs as of now!!
 
 >Yet to be Added:
 
-Integration of OCR, Barcode and QR scanner has to be done. by 25th July 10:00 pm IST
+Integration of OCR, Barcode and QR scanner has to be done. by 2th July 10:00 pm IST
 
 
 
@@ -78,6 +78,7 @@ Integration of OCR, Barcode and QR scanner has to be done. by 25th July 10:00 pm
 Till date there has been plenty of camscanner apps replica been made., but none of them are built with Flutter and most of the native Android Apps use the Open Sourced ScanLibrary which has all the functonalities in them. Which makes it super easy to build a camscanner App in Java. But beacuse Flutter, has no such Libraries as it was released 
 on May 2017, no such article , posts or video tutorials are there yet!!
 
+So, this will be the first Indian Scanner App built with Dart on top of Flutter FrameWork.
 
 
 # Sample Videos in Zip Files:
@@ -87,7 +88,7 @@ A Scanner App which converts camera or device images into pdf and allows sharing
 It also has a QR Scanner and Barcode Scanner feature and the Barcode Scan allows users to check if the product is an Indian Product or not.
 
 
-> video which is not in the zip file of _scanner app from gallery_ will be made available on 25th July by 4:00 pm
+> video which is not in the zip file of _scanner app from gallery_ will be made available on 26th July by 4:00 pm
 
 
 
