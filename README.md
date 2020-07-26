@@ -41,7 +41,7 @@ Cross- Platform
 
 No external SDKs used.
 
-Entire functionality coded by us.
+Entire functionality coded by me.
 
 Beautiful UI with pleasing UX.
 
