@@ -124,9 +124,15 @@ Video depecting the Milestones we have achieved till date:
 
 > TODO:
 
-Integrate QR Scanner, Barcode Scanner , OCR Feature with the main App.
+Integrate  OCR Feature with the main App.
 
 Integrate new filters using OpenCV Library
+
+Push The final code after all the integrations.
+
+> Todo Done:
+
+ QR Scanner, Barcode Scanner, Feature has been integrated in the main app.
 
 >The Software is not Open Sourced.
 
