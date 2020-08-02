@@ -122,6 +122,10 @@ Video depecting the Milestones we have achieved till date:
 
 [scanner_app_from_camera.zip](https://github.com/arnav-snowleo/scanner_app/files/4974157/scanner_app_from_camera.zip)
 
+> OCR USED INSIDE APP
+
+[ocr_in_app.zip](https://github.com/arnav-snowleo/scanner_app/files/5012444/ocr_in_app.zip)
+
 > TODO:
 
 Sample Video of the OCR , QR , Barcode product country checker to be added.
