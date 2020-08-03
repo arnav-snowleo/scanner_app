@@ -126,9 +126,12 @@ Video depecting the Milestones we have achieved till date:
 
 [ocr_in_app.zip](https://github.com/arnav-snowleo/scanner_app/files/5012444/ocr_in_app.zip)
 
-> TODO:
+> BARCODE SCANNER CHECKING PRODUCT COUNTRY IN APP
 
-Sample Video of the OCR , QR , Barcode product country checker to be added.
+[barcode_product_country_checker_in_app.zip](https://github.com/arnav-snowleo/scanner_app/files/5015306/barcode_product_country_checker_in_app.zip)
+
+
+> TODO:
 
 Integrate new filters using OpenCV Library
 
@@ -137,6 +140,8 @@ Push The final code after all the integrations.
 > Todo Done:
 
  QR Scanner, Barcode Scanner, Feature has been integrated in the main app.
+ 
+ Sample Video of the OCR , QR , Barcode product country checker has been added and its video is made available in a zip file.
  
  
 Integration of OCR Feature with the main App done.
