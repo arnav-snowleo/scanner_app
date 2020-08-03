@@ -64,12 +64,9 @@ None
 >Bugs:
 
 Minor bug causing code breaking has been Fixed.
-So, no bugs as of now!!
+So, the app is bug free!!
 
 
->Yet to be Added:
-
-Integration of OCR, Barcode and QR scanner has to be done. by 26th July 10:00 pm IST
 
 
 
